@@ -1,0 +1,241 @@
+ body{
+    margin: 0;
+    padding: 0;
+}
+/*start navbar*/
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 3;
+    transition: all .5s;
+    border-bottom: 1px rgba(255, 255, 255, 0.7) solid
+}
+.navbar > a{
+    font-weight: bolder;
+    font-size: large;
+}
+.navbar .nav-link, .navbar-brand{
+/*    color: rgba(255, 255, 255, 0.7) !important*/
+}
+.dropdown-menu a{
+    color: black !important
+}
+
+@media(max-width : 991px){
+    .navbar-nav {
+        background-color: white;
+        padding-left: 1%
+    }
+    
+    .navbar .collapse a{
+        color: black !important
+    }
+    .navbar .collapse a:hover{
+        color: blue !important;
+    }
+}
+
+/*end navbar*/
+
+
+
+
+/*start main section*/
+
+
+.main{
+    width: 100%;
+    height: 600px;
+    background: rgb(2,0,36);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/main.jpg);
+    color: rgba(255, 255, 255, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 5rem
+}
+.main .container{
+    display: flex;
+    align-items: center;
+}
+.navbar-light .navbar-toggler{
+    color: rgba(255, 255, 255, .7)
+}
+.main .txt button{
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: white;
+    text-transform: capitalize;
+    padding: 9px 15px;
+    margin-bottom: 5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+.main .txt button:hover{
+    background-color: black;
+    border: 2px solid black;
+}
+.main .txt h3{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem
+}
+.main .txt p{
+    margin-bottom: 2rem
+}
+@media(max-width:800px){
+    .main .txt {
+        padding-right: 3rem
+    }
+    .main .container{
+        animation: none
+    }
+}
+.main .rolling{
+    width: .8rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    margin-top: 5ren
+}
+
+/*end main sectoin*/
+
+
+
+/*start aboutus section*/
+.about{
+    margin-bottom: 5rem;
+}
+.about h3{
+    margin-bottom: 4rem;
+    color: #007bff;
+    opacity: 0;
+    transition: opacity 1s;
+	font-size: 3rem
+}
+
+.about >.container{
+    display: flex;
+}
+.about img{
+    width: 40%;
+    height: 300px;
+    margin-right: 20%;
+    float: left;
+    margin-top: 120px;
+    transition: all 1s 
+
+}
+.about .txt{
+    width: 40%;
+    text-align: left;
+    margin-top: 120px;
+    transition: all 2.5s
+}
+.about .txt .fas{
+    color: #71bc42;
+    margin-right: 1rem
+}
+@media(max-width:576px){
+    .about .container{
+        display: grid;
+    }
+    .about .container img,.about .container .txt{
+        margin: 0 auto;
+        width: 100%
+    }
+}
+/*end aboutus section*/
+
+
+/*start features section*/
+
+.features .container{
+    display: flex
+}
+.features h3{
+    color: #007bff;
+    font-size: 3rem
+}
+.features p:first-of-type{
+    font-size: 1.5rem;
+    margin-bottom: 7rem
+}
+.features .carousel .owl-carousel:first-of-type{
+	width: 45%;
+	margin-right: 10%;
+	display: flex;
+	align-items: center;
+	position: relative
+}
+.features .carousel .owl-carousel:first-of-type .owl-stage-outer{
+	width: 100%
+}
+.features .carousel .owl-carousel:first-of-type .owl-stage{
+	display: flex;
+	align-items: center;
+}
+.features .carousel .owl-carousel:first-of-type .owl-stage img{
+	overflow: visible
+}
+
+.features .carousel .owl-carousel:first-of-type .owl-nav{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: -5rem
+}
+.features .carousel .owl-carousel:first-of-type .owl-nav button{
+	width: 5rem;
+	height: 5rem;
+	background-color: #007bff;
+	font-size: 3rem;
+	color: white
+
+}
+
+.features .carousel .owl-carousel:last-of-type .owl-nav{
+	display: none
+}
+.features .carousel .owl-carousel:last-of-type{
+	width: 45%;
+	text-align: left
+}
+
+.features .card{
+	border: none
+}
+.features .card button{
+	background-color: #007bff;
+    border: 2px solid #007bff;
+    color: white;
+    text-transform: capitalize;
+    padding: 9px 15px;
+    margin-bottom: 5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+
+.features .card button:hover{
+	background-color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*end featuers section*/
