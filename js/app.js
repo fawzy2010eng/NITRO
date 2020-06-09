@@ -90,9 +90,6 @@ $(document).ready(function(){
 	firstprevbtn.click(function() { 
 		secondprevbtn.trigger("click"); 
     })
-	firstprevbtn.addEventListener('click',function(){
-		alert('sec')
-	})
 });
 
 
