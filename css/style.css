@@ -158,13 +158,24 @@
 .features .container{
     display: flex
 }
-.features h3{
+.features >h3{
     color: #007bff;
-    font-size: 3rem
+    font-size: 3rem;
+	opacity: 0;
+	margin-top: 190px;
+	transition: all 2s
+
 }
-.features p:first-of-type{
+.features >p{
     font-size: 1.5rem;
-    margin-bottom: 7rem
+    margin-bottom: 7rem;
+	opacity: 0;
+	margin-top: 90px;
+	transition: all 2s
+}
+.features .container{
+	margin-top: 200px;
+	transition: all 2s
 }
 .features .carousel .owl-carousel:first-of-type{
 	width: 45%;
@@ -172,6 +183,14 @@
 	display: flex;
 	align-items: center;
 	position: relative
+}
+.features .card h3{
+    color: #007bff;
+    font-size: 2.5rem;
+	margin-bottom: 4rem
+}
+.features .card p{
+	margin-bottom: 3.4rem
 }
 .features .carousel .owl-carousel:first-of-type .owl-stage-outer{
 	width: 100%
@@ -181,7 +200,7 @@
 	align-items: center;
 }
 .features .carousel .owl-carousel:first-of-type .owl-stage img{
-	overflow: visible
+/*	overflow: visible*/
 }
 
 .features .carousel .owl-carousel:first-of-type .owl-nav{
@@ -227,15 +246,72 @@
     border: 2px solid black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width:768px){
+	.features .container{
+		display: grid;
+		grid-template-columns: 100%
+	}
+	.features .container .owl-carousel:first-of-type{
+		width: 100%;
+	}
+	.features .carousel .owl-carousel:first-of-type .owl-nav{
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: 0rem;
+		left: 40%	
+	}
+	.features .carousel .owl-carousel:last-of-type{
+		width: 100%;
+		text-align: center
+	}
+}
 /*end featuers section*/
+
+/*start team section*/
+.grid{
+	display: grid;
+	grid-template-columns: auto auto auto auto
+}
+.grid .team-item .img-icons{
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+.grid .team-item .img-icons div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 30px;
+	background-color: #007bff;
+	color: white;
+	display: grid;
+	align-items: center;
+	z-index: -1
+}
+.grid .team-item .img-icons:hover  .grid .team-item .img-icons div{
+	z-index: 1	
+}
+.grid .team-item .img-icons div i{
+	display: block
+}
+.grid .team-item .img-icons img{
+	width: 100%
+}
+
+/*end team section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
